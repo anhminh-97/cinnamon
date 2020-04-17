@@ -1,0 +1,562 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html input, html button {
+  outline: none;
+}
+
+html ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+}
+
+html a:hover {
+  text-decoration: none;
+  color: #ff4a06;
+}
+
+html p, html h1, html h2, html h3, html h4, html h5 {
+  color: white;
+}
+
+html h6 {
+  color: gray;
+}
+
+.container-fluid, .container-lg {
+  padding: 0 !important;
+}
+
+header .heading {
+  background-color: #1d1d1d;
+  height: 70px;
+  padding: 0 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.95;
+}
+
+header .heading .header__nav .header__nav-logo a img {
+  width: 100%;
+  height: auto;
+}
+
+header .heading .header__nav .header__nav-menu li {
+  text-transform: uppercase;
+  position: relative;
+}
+
+header .heading .header__nav .header__nav-menu li .under-line {
+  height: 1.2px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+header .heading .header__nav .header__nav-menu li:hover .under-line {
+  width: 100%;
+}
+
+header .heading .header__nav .header__nav-menu li > a:hover {
+  color: white;
+}
+
+header .heading .header__search {
+  height: 100%;
+}
+
+header .heading .header__search .search-bar {
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+header .heading .header__search .search-bar input, header .heading .header__search .search-bar button {
+  background-color: transparent;
+  border: none;
+}
+
+header .heading .header__search .search-bar input {
+  width: 90%;
+  height: 100%;
+  color: white;
+  margin: 0;
+}
+
+header .heading .header__search .search-bar i {
+  color: white;
+}
+
+header .heading .header__search .sign-in {
+  height: 100%;
+}
+
+header .heading .header__search .sign-in .avatar {
+  border-radius: 50%;
+}
+
+header .heading .header__search .sign-in .avatar img {
+  height: auto;
+  width: 90%;
+}
+
+header .heading .header__search .sign-in .name {
+  text-transform: capitalize;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header .heading .header__search .no-sign-in i {
+  color: white;
+  font-size: 1.6rem;
+}
+
+header .heading .header__search .no-sign-in a {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.login {
+  border-right: 1px solid gray;
+  padding-right: 5px;
+}
+
+.color-active a {
+  color: #ff4a06;
+}
+
+.row {
+  margin: 0;
+}
+
+main {
+  padding-right: 0;
+  padding-top: 70px;
+  background-color: #272525;
+}
+
+main .row:first-child {
+  position: relative;
+  height: 95vh;
+}
+
+main .banner {
+  padding: 0;
+  height: 80%;
+  background: url("zz409b4c4c.jpg") no-repeat center;
+  background-size: 100%;
+  -webkit-transition: 5s;
+  transition: 5s;
+  animation: banner 30s ease-in-out infinite alternate-reverse forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes banner {
+  0% {
+    background-image: url("1w49lfy127pz.jpg");
+  }
+  50% {
+    background-image: url("Gangster-Squad-Banner.jpg");
+  }
+  100% {
+    background-image: url("batman-bane-the-dark-knight-rises-movie-banner-01-2366x1088.jpg");
+  }
+}
+
+@keyframes banner {
+  0% {
+    background-image: url("1w49lfy127pz.jpg");
+  }
+  50% {
+    background-image: url("Gangster-Squad-Banner.jpg");
+  }
+  100% {
+    background-image: url("batman-bane-the-dark-knight-rises-movie-banner-01-2366x1088.jpg");
+  }
+}
+
+main .slider {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .slider ul {
+  padding: 0;
+}
+
+main .slider ul li.item {
+  height: 280px;
+  background-color: #0c0b0b;
+}
+
+main .slider ul li.item .item__inner {
+  height: 75%;
+  margin: 0 auto;
+}
+
+main .slider ul li.item .item__inner .item__image img {
+  width: auto;
+  height: 100%;
+}
+
+main .slider ul li.item .item__inner .item__content h2 {
+  text-transform: uppercase;
+}
+
+main .slider ul li.item .item__inner .item__content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+main .slider ul li.item .item__inner .item__content h2, main .slider ul li.item .item__inner .item__content p {
+  margin-bottom: 15px;
+}
+
+main .slider ul li.item .item__inner .item__content .star i {
+  color: #ff4a06;
+  margin-right: 4px;
+}
+
+main .btn-play {
+  width: 150px;
+  height: 40px;
+  background-color: #ff4a06;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+main .btn-play i {
+  margin-right: 7px;
+}
+
+main .btn-play:hover {
+  background-color: #df4913;
+}
+
+main .btn-play:hover a {
+  color: lightgray;
+}
+
+main .btn-play > a:hover {
+  color: lightgray;
+}
+
+main .mt-200 {
+  margin-top: 200px;
+}
+
+main .movie {
+  padding: 0;
+  margin-bottom: 130px;
+}
+
+main .movie .movie__heading {
+  padding: 0 48px;
+  margin-bottom: 30px;
+}
+
+main .movie .movie__heading h3 {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+main .movie .movie__heading span {
+  font-size: 1.5rem;
+}
+
+main .movie .movie__heading span a {
+  color: gray;
+}
+
+main .movie .movie__heading span i {
+  font-size: 0.9rem;
+}
+
+main .movie ul {
+  padding-left: 40px;
+}
+
+main .movie ul li {
+  margin-right: 15px;
+}
+
+main .movie ul li p {
+  margin: 20px 0 0 0;
+  font-size: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+main .movie ul li .review i {
+  color: #ff4a06;
+  font-size: 0.8rem;
+  margin-right: 3px;
+}
+
+main .movie ul li .review h6 {
+  margin: 0 0 0 10px;
+}
+
+main .movie ul li a > img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+main .movie ul::-webkit-scrollbar {
+  display: none;
+}
+
+main .trailer {
+  padding: 0;
+  background: url(trailer.jpg) no-repeat;
+  background-size: 100%;
+}
+
+main .trailer .trailer__overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 5%;
+}
+
+main .trailer .trailer__overlay p {
+  margin: 30px 0;
+}
+
+footer {
+  padding: 20px 13% 5px 13%;
+  background-color: #0C0B0B;
+}
+
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer ul li a i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 0;
+  }
+  main .banner {
+    height: 200px;
+  }
+  main .movie {
+    margin-top: -35px;
+  }
+  main .movie .movie__heading h3 {
+    font-size: 1.3rem;
+  }
+  main .movie .movie__heading span a {
+    font-size: 1rem;
+  }
+  main .movie .movie__heading span a i {
+    font-size: 0.7rem;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 500px) {
+  main .banner {
+    height: 353px;
+  }
+  footer {
+    padding: 20px 20px 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-200 {
+    margin: 0;
+  }
+  header .heading {
+    height: 50px;
+    padding: 0;
+  }
+  header .heading .header__search .hambuger-menu i {
+    color: white;
+  }
+  header .overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+  header .menu-dropdown {
+    padding-top: 15px;
+    width: 230px;
+    height: 100vh;
+    text-align: center;
+    background-color: #272525;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+  }
+  header .menu-dropdown i.fa-user-circle {
+    font-size: 2rem;
+    color: white;
+    margin-right: 7px;
+  }
+  header .menu-dropdown .name-user {
+    background-color: black;
+  }
+  header .menu-dropdown .name-user .avatar {
+    padding: 5px 0;
+  }
+  header .menu-dropdown .name-user .avatar img {
+    width: 70%;
+    height: auto;
+    border: .5px solid white;
+    border-radius: 50%;
+  }
+  header .menu-dropdown button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 15px;
+  }
+  header .menu-dropdown p {
+    margin: 10px 0;
+  }
+  header .menu-dropdown ul i {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 7%;
+  }
+  header .menu-dropdown ul li:last-child {
+    border-bottom: 0.5px solid gray;
+  }
+  header .menu-dropdown ul li {
+    padding-bottom: 10px;
+  }
+  header #menu:checked ~ .menu-dropdown {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header #menu:checked ~ .overlay {
+    display: block;
+  }
+  main {
+    padding-top: 50px;
+  }
+  main .row:first-child {
+    height: auto;
+  }
+  main .movie {
+    margin-bottom: 30px;
+  }
+  main .movie .movie__heading {
+    margin-bottom: 0;
+    padding: 0 25px;
+    margin-bottom: 20px;
+  }
+  main .movie .movie__heading span {
+    font-size: 1.3rem;
+  }
+  main .movie ul {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  main .movie ul li {
+    margin-right: 5px;
+  }
+  main .movie ul li p {
+    font-size: 1rem;
+  }
+  main .movie ul li .review i {
+    font-size: 0.7rem;
+  }
+  main .movie ul li .review h6 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  header .heading {
+    padding: 0 20px;
+  }
+  main .banner {
+    height: 450px;
+  }
+  main .row:first-child {
+    height: auto;
+  }
+  main .movie ul li p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 992px) {
+  header .heading {
+    padding: 0 30px;
+  }
+  main .movie ul li p {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
